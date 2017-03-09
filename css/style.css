@@ -1,0 +1,30 @@
+body{
+  background-color : #E8E8E8;
+}
+
+#calc{
+  background-color: #333333;
+  color: #FFFFFF;
+  margin-top: 5em;
+  margin-bottom: 1em;
+  max-width: 35em;
+  padding-top: 2em;
+}
+
+#display{
+  background-color: #FFFFFF;
+  color: #000000;
+  text-align: right;
+  height: 7.5em;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+.border{
+  border-style: solid;
+}
+
+.calc-btn:hover{
+  background-color: #222222; 
+  cursor: pointer;
+}
