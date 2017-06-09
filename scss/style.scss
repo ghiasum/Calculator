@@ -1,15 +1,76 @@
-/* bootstrap scss */
-
-$enable-flex:               true;
-$enable-grid-classes:       true;
-
-@import '../bootstrap/scss/_variables.scss';
-@import '../bootstrap/scss/_mixins.scss';
-@import '../bootstrap/scss/_reboot.scss';
-@import '../bootstrap/scss/_grid.scss';
-
 /* custom scss */
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #303133;
+}
 
 
+.row-calc {
+    border: 1px solid #000000;
+    text-align: center;
+}
 
+.calculator {
+    width: 300px;
+    //border: 10px solid red;
+    margin: 50px auto;
+}
+
+.calc-title {
+    background-color: #F6F4DF;
+    h1{
+        font-size: 1.1em;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-weight: 400;
+        //border: 1px solid black;
+    }
+}
+
+.calc-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    background-color: #FFFEF6;
+    height: 125px;
+}
+
+.calc-button {
+    //border: 1px solid black;
+    background-color: #F6F4DF;
+    font-weight: 600;
+    font-size: 1.25em;
+    transition: background-color 2ms ease-in;
+    &:hover {
+        background-color: #D7D5C8;    
+    }
+}
+
+.calc-ops {
+    font-weight: 400;
+}
+
+
+.running-display {
+    margin: 0;
+    //border: 1px solid red;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.display-txt {
+    margin: 0;
+    //border: 1px solid red;
+    font-size: 3.5em;
+}
