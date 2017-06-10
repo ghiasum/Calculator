@@ -22,8 +22,7 @@ body {
 
 .calculator {
     width: 300px;
-    //border: 10px solid red;
-    margin: 50px auto;
+    margin: 75px auto;
 }
 
 .calc-title {
@@ -33,7 +32,6 @@ body {
         margin-top: 15px;
         margin-bottom: 15px;
         font-weight: 400;
-        //border: 1px solid black;
     }
 }
 
@@ -47,7 +45,6 @@ body {
 }
 
 .calc-button {
-    //border: 1px solid black;
     background-color: #F6F4DF;
     font-weight: 600;
     font-size: 1.25em;
@@ -62,15 +59,13 @@ body {
 }
 
 
-.running-display {
+.small-display {
     margin: 0;
-    //border: 1px solid red;
     font-size: 1.5em;
     font-weight: 300;
 }
 
-.display-txt {
+.big-display {
     margin: 0;
-    //border: 1px solid red;
     font-size: 3.5em;
 }
