@@ -16,7 +16,7 @@ body {
 
 .calculator {
   width: 300px;
-  margin: 50px auto; }
+  margin: 75px auto; }
 
 .calc-title {
   background-color: #F6F4DF; }
@@ -52,11 +52,11 @@ body {
 .calc-ops {
   font-weight: 400; }
 
-.running-display {
+.small-display {
   margin: 0;
   font-size: 1.5em;
   font-weight: 300; }
 
-.display-txt {
+.big-display {
   margin: 0;
   font-size: 3.5em; }
