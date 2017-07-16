@@ -12,7 +12,6 @@ function isInt(n) {
 /* takes in string representing arithmetic operation and returns results as number */ 
 function getResults(arStack){	
 	var entries = arStack.split(/([\u002B\u00F7\u00D7\u2212])/g);
-    console.log("entries = " + entries);
     
     /* for the case where no arithmetic operator is present */
     if(entries.length === 1){
@@ -105,7 +104,6 @@ $(document).ready(function(){
   
     /* check which button is pressed */
     var input = $(this).children("p:first").text();
-    console.log(input);
   
     // if user input is a number
     if(input.match(/[0-9]/g)){ 							
@@ -138,7 +136,6 @@ $(document).ready(function(){
 			smallDisplayOut($(".big-display").text(), false);
 		}
 		if(!($(".small-display").text().match(/[\u002B\u00F7\u00D7\u2212]$/g))){
-			console.log(arStack, arStack.length);
 			if(arStack.split(/([\u002B\u00F7\u00D7\u2212])/g).length === 3){
 				var result = getResults(arStack);
 				bigDisplayOut(result, false); 
@@ -151,7 +148,6 @@ $(document).ready(function(){
             else{
                 arStack = arStack.concat(input);
             }
-            console.log("arStack = ", arStack);
 		}
 	}
 
@@ -175,7 +171,6 @@ $(document).ready(function(){
 		}
 		else if($(".small-display").text() !== "0"){
 			var regex = new RegExp($(".big-display").text() + "$", "g"); 
-			console.log(regex);
 			smallDisplayOut($(".small-display").text().replace(regex, ''), false);
 			arStack = arStack.replace(regex, '');
 		}
